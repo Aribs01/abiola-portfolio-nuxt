@@ -1,0 +1,88 @@
+@font-face {
+    font-family: fasthand;
+    src: url(./Fasthand-Regular.ttf);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo-container{
+    position: fixed;
+    height: 40px;
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    background-color: #0f0e17;
+    color: #ff8906;
+}
+.logo{
+    font-size: 35px;
+    font-family: fasthand;
+    letter-spacing: 5px;
+    margin-left: 50px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition-duration: 0.3s;
+    text-transform: uppercase;
+}
+.logo:hover{
+    border-bottom: 1px solid #ff8906;
+}
+.logo-menu{
+    font-size: 25px;
+    font-family: fasthand;
+    letter-spacing: 2px;
+    margin-right: 20px;
+}
+.logo-menu span{
+    cursor: pointer;
+    margin-right: 5px;
+    transition-duration: 0.4s;
+    border-bottom: 1px solid transparent;
+}
+.logo-menu span:hover{
+    border-bottom: 1px solid #ff8906;
+}
+.mobile-topbar{
+    display: none;
+}
+.ham-box{
+    cursor: pointer;
+}
+.ham-box-inner{
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #a7a9be;
+    border-radius: 3px;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+@media (max-width: 768px){
+    .logo{
+        font-size: 25px;
+        margin-left: 10px;
+    }
+    .logo-menu{
+        font-size: 20px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 325px){
+    .logo-menu{
+        display: none;
+    }
+    .mobile-topbar{
+        display: block;
+        margin-right: 10px;
+    }
+}

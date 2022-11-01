@@ -1,0 +1,32 @@
+.home-container{
+    height: 100vh;
+    color: #a7a9be;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-content-container1{
+    width: 92%;
+    line-height: 20px;
+}
+.home-content-header{
+    font-size: 25px;
+}
+.home-content2{
+    font-size: 25px;
+}
+.home-content3{
+    width: 50%;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px){
+    .home-content-container1{
+        line-height: 40px;
+    }
+    .home-content3{
+        width: 100%;
+    }
+}
